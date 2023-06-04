@@ -5,7 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geografía | Tableros de control</title>
-
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="src/main.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- SLICK CAROUSEL -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,31 +31,73 @@
   </head>
 
   <body>
-    <h1>Geo Dashboards</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem
-      quis ipsam aspernatur fugit tempore.
-    </p>
+    <header>
+      <div class="logo-container">
+        <img id="geo-logo" src="img/globe.png" alt="logotipo-geo" />
+        <h4 class="logo-title">Carrera de Geografía</h4>
+      </div>
+    </header>
+    <main>
+      <div class="main-text">
+        <h1>Tableros de control</h1>
+        <p>
+          Tableros de control elaborados en el marco del Seminario de Ciencia de
+          Datos dictado en mayo de 2023 por Dr. Luis Reynoso por estudiantes de
+          la carrera de Geografía.
+        </p>
+      </div>
 
-    <div class="carousel">
-      <div><img src="dash.jpg" /></div>
-      <div><img src="dash.jpg" /></div>
-      <div><img src="dash.jpg" /></div>
-      <div><img src="dash.jpg" /></div>
-    </div>
+      <div class="carousel-container">
+        <i class="fa-solid fa-circle-chevron-left slick-prev"></i>
+        <div class="carousel">
+          <a href="" target="_blank">
+            <div class="dash-preview">
+              <h3 class="dash-title">Dash1</h3>
+              <img src="img/dash-placeholder.jpg" />
+              <p class="dash-description">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="dash-preview">
+              <h3 class="dash-title">Dash2</h3>
+              <img src="img/dash-placeholder.jpg" />
+              <p class="dash-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit,
+                porro!
+              </p>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="dash-preview">
+              <h3 class="dash-title">Dash3</h3>
+              <img src="img/dash-placeholder.jpg" />
+              <p class="dash-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+                reiciendis nesciunt quaerat, similique unde animi delectus
+                repellat dicta, neque, eius vel quisquam excepturi odit id.
+              </p>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="dash-preview">
+              <h3 class="dash-title">Dash4</h3>
+              <img src="img/dash-placeholder.jpg" />
+              <p class="dash-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                numquam?
+              </p>
+            </div>
+          </a>
+        </div>
+        <i class="fa-solid fa-circle-chevron-right slick-next"></i>
+      </div>
+    </main>
+    <footer>
+      <a href="http://geografia.fch.unicen.edu.ar/" target="_blank">© Carrera de Geografía 2023</a>
+      <a href="https://www.fch.unicen.edu.ar/" target="_blank">Facultad de Ciencias Humanas</a>
+      <a href="https://www.unicen.edu.ar/" target="_blank">Universidad del Centro de la Provincia de Buenos Aires</a>
+    </footer>
 
-    <script>
-      $(document).ready(function () {
-        $(".carousel").slick({
-          dots: true, // Muestra los indicadores de navegación
-          infinite: true, // Permite la navegación continua
-          speed: 500, // Velocidad de transición en milisegundos
-          autoplay: true,
-          autoplaySpeed: 2000,
-          slidesToShow: 3, // Número de imágenes que se muestran a la vez
-          slidesToScroll: 1, // Número de imágenes que se desplazan al avanzar o retroceder
-        });
-      });
-    </script>
+    <script src="src/script.js"></script>
   </body>
 </html>
