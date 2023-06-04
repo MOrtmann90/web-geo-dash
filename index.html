@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geografía | Tableros de control</title>
-</head>
-<body>
-    <h1>Geo Dashboards</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem quis ipsam aspernatur fugit tempore.</p>
 
-    <img src="./dash.jpg" alt="dashboard-img">
-</body>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Geo Dashboards</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem
+      quis ipsam aspernatur fugit tempore.
+    </p>
+
+    <div class="carousel">
+      <div><img src="dash.jpg" /></div>
+      <div><img src="dash.jpg" /></div>
+      <div><img src="dash.jpg" /></div>
+      <div><img src="dash.jpg" /></div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".carousel").slick({
+          dots: true, // Muestra los indicadores de navegación
+          infinite: true, // Permite la navegación continua
+          speed: 500, // Velocidad de transición en milisegundos
+          autoplay: true,
+          autoplaySpeed: 2000,
+          slidesToShow: 3, // Número de imágenes que se muestran a la vez
+          slidesToScroll: 1, // Número de imágenes que se desplazan al avanzar o retroceder
+        });
+      });
+    </script>
+  </body>
 </html>
