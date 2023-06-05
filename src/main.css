@@ -218,7 +218,7 @@ footer a {
   display: block;
 }
 
-footer a:visited {
+footer a:visited, footer a:link  {
   color: var(--sec-font-color);
 }
 
