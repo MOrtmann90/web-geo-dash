@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geografía | Tableros de control</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="src/main.css" />
     <!-- GOOGLE FONTS -->
@@ -32,34 +32,38 @@
 
   <body>
     <header>
-      <div class="logo-container">
+      <a href="http://geografia.fch.unicen.edu.ar/" class="logo-container">
         <img id="geo-logo" src="img/globe.png" alt="logotipo-geo" />
         <h4 class="logo-title">Carrera de Geografía</h4>
-      </div>
+      </a>
+      <a href="https://www.fch.unicen.edu.ar/"
+        ><img id="fch-logo" src="img/fch-logo.png" alt="logotipo-fch"
+      /></a>
     </header>
     <main>
       <div class="main-text">
         <h1>Tableros de control</h1>
+        <hr />
         <p>
-          Tableros de control elaborados en el marco del Seminario de Ciencia de
-          Datos dictado en mayo de 2023 por Dr. Luis Reynoso por estudiantes de
-          la carrera de Geografía.
+          Elaborados en el marco del Seminario de Ciencia de Datos dictado en
+          mayo de 2023 por Dr. Luis Reynoso por estudiantes de la carrera de
+          Geografía.
         </p>
       </div>
 
       <div class="carousel-container">
         <i class="fa-solid fa-circle-chevron-left slick-prev"></i>
-        <div class="carousel">
+        <div class="sliders">
           <a href="" target="_blank">
             <div class="dash-preview">
-              <h3 class="dash-title">Dash1</h3>
+              <h3 class="dash-title">Título #1</h3>
               <img src="img/dash-placeholder.jpg" />
               <p class="dash-description">Lorem ipsum dolor sit amet.</p>
             </div>
           </a>
           <a href="" target="_blank">
             <div class="dash-preview">
-              <h3 class="dash-title">Dash2</h3>
+              <h3 class="dash-title">Título #2</h3>
               <img src="img/dash-placeholder.jpg" />
               <p class="dash-description">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit,
@@ -69,7 +73,7 @@
           </a>
           <a href="" target="_blank">
             <div class="dash-preview">
-              <h3 class="dash-title">Dash3</h3>
+              <h3 class="dash-title">Título #3</h3>
               <img src="img/dash-placeholder.jpg" />
               <p class="dash-description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
@@ -80,7 +84,7 @@
           </a>
           <a href="" target="_blank">
             <div class="dash-preview">
-              <h3 class="dash-title">Dash4</h3>
+              <h3 class="dash-title">Título #4</h3>
               <img src="img/dash-placeholder.jpg" />
               <p class="dash-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
@@ -93,9 +97,20 @@
       </div>
     </main>
     <footer>
-      <a href="http://geografia.fch.unicen.edu.ar/" target="_blank">© Carrera de Geografía 2023</a>
-      <a href="https://www.fch.unicen.edu.ar/" target="_blank">Facultad de Ciencias Humanas</a>
-      <a href="https://www.unicen.edu.ar/" target="_blank">Universidad del Centro de la Provincia de Buenos Aires</a>
+      <div class="links-container">
+        <a
+          id="link-carrera"
+          href="http://geografia.fch.unicen.edu.ar/"
+          target="_blank"
+          >© Carrera de Geografía 2023</a
+        >
+        <a href="https://www.fch.unicen.edu.ar/" target="_blank"
+          >Facultad de Ciencias Humanas</a
+        >
+        <a href="https://www.unicen.edu.ar/" target="_blank"
+          >Universidad del Centro de la Provincia de Buenos Aires</a
+        >
+      </div>
     </footer>
 
     <script src="src/script.js"></script>
