@@ -90,9 +90,7 @@ main {
 }
 
 /* ----------------- Slick buttons ----------------- */
-.slick-prev:before {
-  content: "←";
-}
+
 .slick-prev:before,
 .slick-next:before {
   font-family: "Roboto", sans-serif;
@@ -138,10 +136,10 @@ main {
   -webkit-tap-highlight-color: transparent;
 }
 
-.blue {
+/* .blue {
   background: #3498db;
   color: #fff;
-}
+} */
 
 /* ----------------- Slick dots ----------------- */
 .slick-dots {
@@ -212,6 +210,7 @@ main {
 /* ----------------- FOOTER ----------------- */
 footer {
   background-color: var(--footer-color);
+  margin-top: 1rem;
 }
 
 footer a {
@@ -268,7 +267,6 @@ footer a:visited, footer a:link  {
 
   main {
     width: 1366px;
-    /* background-color: #04163b; */
     margin-inline: auto;
   }
 }
